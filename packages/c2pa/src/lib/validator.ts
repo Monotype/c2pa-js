@@ -21,6 +21,13 @@ const dbg = debug('c2pa:Validator');
  */
 export class Validator {
   static readonly VALID_MIME_TYPES = [
+    'application/font-sfnt',
+    'application/x-font-opentype',
+    'application/x-font-ttf',
+    'application/x-font-truetype',
+    'font/otf',
+    'font/sfnt',
+    'font/otf',
     'image/jpeg',
     'image/png',
     'application/x-c2pa-manifest-store',
