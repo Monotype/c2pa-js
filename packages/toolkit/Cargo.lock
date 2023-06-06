@@ -254,7 +254,7 @@ checksum = "89b2fd2a0dcf38d7971e2194b6b6eebab45ae01067456a7fd93d5547a61b70be"
 [[package]]
 name = "c2pa"
 version = "0.21.0"
-source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype/fontSupport#25a9c240788633393bb1526ff0d54de5f4504dee"
+source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype/fontSupport#fd22030d94f40d74e34b48a10524378743c1b64e"
 dependencies = [
  "asn1-rs",
  "async-trait",
