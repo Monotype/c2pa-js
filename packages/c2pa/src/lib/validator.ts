@@ -27,7 +27,7 @@ export class Validator {
     'application/x-font-truetype',
     'font/otf',
     'font/sfnt',
-    'font/otf',
+    'font/ttf',
     'image/jpeg',
     'image/png',
     'application/x-c2pa-manifest-store',
