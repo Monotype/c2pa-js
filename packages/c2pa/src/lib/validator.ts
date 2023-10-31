@@ -21,16 +21,31 @@ const dbg = debug('c2pa:Validator');
  */
 export class Validator {
   static readonly VALID_MIME_TYPES = [
+    'application/c2pa',
     'application/font-sfnt',
+    'application/mp4',
+    'application/x-c2pa-manifest-store',
     'application/x-font-opentype',
     'application/x-font-ttf',
     'application/x-font-truetype',
+    'audio/mp4',
+    'audio/mpeg',
+    'audio/vnd.wave',
+    'audio/wav',
+    'audio/x-wav',
     'font/otf',
     'font/sfnt',
     'font/ttf',
+    'image/avif',
+    'image/heic',
+    'image/heif',
     'image/jpeg',
     'image/png',
-    'application/x-c2pa-manifest-store',
+    'image/svg+xml',
+    'image/tiff',
+    'image/webp',
+    'image/x-adobe-dng',
+    'video/mp4',
   ];
 
   static readonly DEFAULT_DETECTION_LENGTH = 65535;
