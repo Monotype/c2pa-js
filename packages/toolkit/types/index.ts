@@ -14,7 +14,7 @@ export interface ResourceParent {
 }
 
 export interface ResourceReference {
-  content_type: string;
+  format: string;
   identifier: string;
 }
 
@@ -56,10 +56,17 @@ export interface SignatureInfo {
   cert_serial_number?: string;
 }
 
+export interface ClaimGeneratorInfo {
+  name: string;
+  version: string;
+  icon?: ResourceReference;
+}
+
 export interface Manifest extends ResourceParent {
   vendor?: string;
   claim_generator: string;
   claim_generator_hints?: Record<string, unknown>;
+  claim_generator_info?: ClaimGeneratorInfo[];
   title: string;
   format: string;
   instance_id: string;
@@ -113,10 +120,19 @@ export type CreativeWorkAssertion = Assertion<
   }
 >;
 
+export type Web3Assertion = Assertion<
+  'adobe.crypto.addresses',
+  {
+    ethereum?: string[];
+    solana?: string[];
+  }
+>;
+
 export type ManifestAssertion =
   | C2paActionsAssertion
   | C2paHashDataAssertion
-  | CreativeWorkAssertion;
+  | CreativeWorkAssertion
+  | Web3Assertion;
 
 export interface ActionV1 {
   action: string;

@@ -6,14 +6,13 @@
  * accordance with the terms of the Adobe license agreement accompanying
  * it.
  */
-
-import { L2ManifestStore } from 'c2pa';
 import { html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
-import defaultStringMap from './ProducedBy.str.json';
+import { Configurable } from '../../mixins/configurable';
 import { baseSectionStyles, defaultStyles } from '../../styles';
-import { ConfigurablePanelSection } from '../../mixins/configurablePanelSection';
+import defaultStringMap from './ProducedBy.str.json';
 
+import { hasChanged } from '../../utils';
 import '../PanelSection';
 
 declare global {
@@ -37,20 +36,23 @@ const defaultConfig: ProducedByConfig = {
 };
 
 @customElement('cai-produced-by')
-export class ProducedBy extends ConfigurablePanelSection(LitElement, {
-  dataSelector: (manifestStore) => manifestStore.producer?.name,
-  config: defaultConfig,
-}) {
+export class ProducedBy extends Configurable(LitElement, defaultConfig) {
   static get styles() {
     return [defaultStyles, baseSectionStyles];
   }
 
+  @property({
+    type: Object,
+    hasChanged,
+  })
+  data: string | undefined;
+
   render() {
-    return this.renderSection(html` <cai-panel-section
-      header=${this._config.stringMap['produced-by.header']}
+    return html` <cai-panel-section
       helpText=${this._config.stringMap['produced-by.helpText']}
     >
-      <div>${this._data}</div>
-    </cai-panel-section>`);
+      <div slot="header">${this._config.stringMap['produced-by.header']}</div>
+      <div slot="content">${this.data}</div>
+    </cai-panel-section>`;
   }
 }
