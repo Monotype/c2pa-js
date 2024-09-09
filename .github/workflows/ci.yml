@@ -4,6 +4,6 @@ jobs:
   CI:
     uses: Monotype/CoreServices-build-deploy/.github/workflows/genric_pr_ci.yml@develop
     with:
-      project: whatthefont-js-sdk
+      project: c2pa-js
       node_version: 20.14.0
     secrets: inherit
