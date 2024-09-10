@@ -12,6 +12,7 @@ export {
   C2paActionsAssertion,
   C2paHashDataAssertion,
   CreativeWorkAssertion,
+  DataType,
 } from '@contentauth/toolkit';
 export { AssertionAccessor, ExtendedAssertions } from './src/assertions';
 export {
@@ -37,11 +38,16 @@ export {
 export { Ingredient } from './src/ingredient';
 export { DownloaderOptions } from './src/lib/downloader';
 export { Manifest } from './src/manifest';
-export { ManifestMap, ManifestStore } from './src/manifestStore';
+export {
+  ManifestMap,
+  ManifestStore,
+  createManifestStore,
+} from './src/manifestStore';
 export {
   IconVariant,
   TranslatedDictionaryCategory,
   getC2paCategorizedActions,
+  registerLocaleForEditsAndActivities,
   selectEditsAndActivity,
 } from './src/selectors/selectEditsAndActivity';
 export {

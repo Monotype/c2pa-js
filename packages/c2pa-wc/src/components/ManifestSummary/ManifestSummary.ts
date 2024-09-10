@@ -20,7 +20,7 @@ import { Configurable } from '../../mixins/configurable';
 import { defaultStyles } from '../../styles';
 import { defaultDateFormatter, hasChanged } from '../../utils';
 import type { MinimumViableProvenanceConfig } from '../MinimumViableProvenance';
-import defaultStringMap from './ManifestSummary.str.json';
+import { Localizable } from '../../mixins/localizable';
 
 import '../AIToolUsed';
 import '../ContentSummary';
@@ -42,17 +42,15 @@ declare global {
   }
 }
 
-export interface ManifestSummaryConfig extends MinimumViableProvenanceConfig {
-  stringMap: Record<string, string>;
-}
-
-const defaultConfig: ManifestSummaryConfig = {
-  stringMap: defaultStringMap,
+const defaultConfig: MinimumViableProvenanceConfig = {
   dateFormatter: defaultDateFormatter,
 };
 
 @customElement('cai-manifest-summary')
-export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
+export class ManifestSummary extends Configurable(
+  Localizable(LitElement),
+  defaultConfig,
+) {
   static readonly cssParts = {
     viewMore: 'manifest-summary-view-more',
   };
@@ -182,6 +180,10 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
       return null;
     }
 
+    const aiToolUsed = this.manifestStore?.generativeInfo
+      ? selectGenerativeSoftwareAgents(this.manifestStore?.generativeInfo)
+      : null;
+
     const dataSelectors = {
       contentSummary: this.manifestStore?.generativeInfo
         ? selectGenerativeType(this.manifestStore?.generativeInfo)
@@ -189,9 +191,7 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
       producedBy: this.manifestStore?.producer?.name,
       producedWith: this.manifestStore?.claimGenerator,
       socialMedia: this.manifestStore?.socialAccounts,
-      aiToolUsed: this.manifestStore?.generativeInfo
-        ? selectGenerativeSoftwareAgents(this.manifestStore?.generativeInfo)
-        : null,
+      aiToolUsed: aiToolUsed?.length ? aiToolUsed : null,
       web3: this.manifestStore?.web3,
     };
 
@@ -199,18 +199,18 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
       <cai-minimum-viable-provenance
         .manifestStore=${this.manifestStore}
         .config=${this._config}
+        locale=${this.locale}
       ></cai-minimum-viable-provenance>
       <div id="content-container">
         ${this.manifestStore.error === 'error'
-          ? html`
-              <div>${this._config.stringMap['manifest-summary.error']}</div>
-            `
+          ? html` <div>${this.strings['manifest-summary.error']}</div> `
           : html`
               ${dataSelectors.contentSummary
                 ? html`
                     <cai-content-summary
                       .data=${dataSelectors.contentSummary}
                       .config=${this._config}
+                      locale=${this.locale}
                     ></cai-content-summary>
                   `
                 : nothing}
@@ -219,6 +219,7 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
                     <cai-produced-by
                       .data=${dataSelectors.producedBy}
                       .config=${this._config}
+                      locale=${this.locale}
                     ></cai-produced-by>
                   `
                 : nothing}
@@ -228,6 +229,7 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
                       .data=${dataSelectors.producedWith}
                       .manifestStore=${this.manifestStore}
                       .config=${this._config}
+                      locale=${this.locale}
                     ></cai-produced-with>
                   `
                 : nothing}
@@ -236,6 +238,7 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
                     <cai-social-media
                       .data=${dataSelectors.socialMedia}
                       .config=${this._config}
+                      locale=${this.locale}
                     ></cai-social-media>
                   `
                 : nothing}
@@ -243,7 +246,7 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
                 ? html`
                     <cai-ai-tool
                       .data=${dataSelectors.aiToolUsed}
-                      .config=${this._config}
+                      locale=${this.locale}
                     ></cai-ai-tool>
                   `
                 : nothing}
@@ -252,6 +255,7 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
                     <cai-web3
                       .data=${dataSelectors.web3}
                       .config=${this._config}
+                      locale=${this.locale}
                     ></cai-web3>
                   `
                 : nothing}
@@ -272,7 +276,7 @@ export class ManifestSummary extends Configurable(LitElement, defaultConfig) {
                 href=${this.viewMoreUrl}
                 target="_blank"
               >
-                ${this._config.stringMap['manifest-summary.viewMore']}
+                ${this.strings['manifest-summary.viewMore']}
               </a>
             `
           : nothing}

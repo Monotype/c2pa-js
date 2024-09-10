@@ -1,6 +1,55 @@
 # Change Log - @contentauth/toolkit
 
-This log was last generated on Tue, 26 Mar 2024 21:30:40 GMT and should not be manually modified.
+This log was last generated on Mon, 19 Aug 2024 17:03:27 GMT and should not be manually modified.
+
+## 0.11.8
+Mon, 19 Aug 2024 17:03:27 GMT
+
+### Patches
+
+- Update c2pa-rs to 0.33.3
+
+## 0.11.7
+Tue, 30 Jul 2024 00:37:40 GMT
+
+### Patches
+
+- Upgrade to c2pa-rs 0.33.0
+
+## 0.11.6
+Mon, 15 Jul 2024 20:21:36 GMT
+
+### Patches
+
+- Update c2pa-rs to 0.32.6
+
+## 0.11.5
+Wed, 19 Jun 2024 16:57:37 GMT
+
+### Patches
+
+- Update c2pa-rs to 0.32.2
+
+## 0.11.4
+Fri, 12 Apr 2024 19:34:30 GMT
+
+### Patches
+
+- Expose `GeneratorInfoMap`
+
+## 0.11.3
+Fri, 05 Apr 2024 18:04:37 GMT
+
+### Patches
+
+- Add types for c2pa.actions.v2
+
+## 0.11.2
+Fri, 05 Apr 2024 16:07:54 GMT
+
+### Patches
+
+- Update c2pa-rs to 0.31.3
 
 ## 0.11.1
 Tue, 26 Mar 2024 21:30:40 GMT

@@ -24,6 +24,7 @@ export class Validator {
     'application/c2pa',
     'application/font-sfnt',
     'application/mp4',
+    'application/pdf',
     'application/x-c2pa-manifest-store',
     'application/x-font-opentype',
     'application/x-font-ttf',
@@ -47,8 +48,8 @@ export class Validator {
     'image/x-adobe-dng',
     'image/x-sony-arw',
     'video/mp4',
+    'video/quicktime',
     'video/x-msvideo',
-    'application/pdf',
   ];
 
   static readonly DEFAULT_DETECTION_LENGTH = 65535;

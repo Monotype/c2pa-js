@@ -1,6 +1,111 @@
 # Change Log - c2pa-wc
 
-This log was last generated on Tue, 26 Mar 2024 21:30:40 GMT and should not be manually modified.
+This log was last generated on Tue, 10 Sep 2024 19:21:30 GMT and should not be manually modified.
+
+## 0.13.14
+Tue, 10 Sep 2024 19:21:30 GMT
+
+### Patches
+
+- Fix generative info display
+
+## 0.13.13
+Tue, 20 Aug 2024 14:09:04 GMT
+
+_Version update only_
+
+## 0.13.12
+Mon, 19 Aug 2024 17:03:27 GMT
+
+_Version update only_
+
+## 0.13.11
+Tue, 30 Jul 2024 21:39:10 GMT
+
+_Version update only_
+
+## 0.13.10
+Tue, 30 Jul 2024 00:37:41 GMT
+
+_Version update only_
+
+## 0.13.9
+Tue, 23 Jul 2024 15:58:41 GMT
+
+_Version update only_
+
+## 0.13.8
+Tue, 23 Jul 2024 15:13:27 GMT
+
+### Patches
+
+- Add language support for ID and VN
+
+## 0.13.7
+Mon, 22 Jul 2024 17:52:53 GMT
+
+_Version update only_
+
+## 0.13.6
+Tue, 16 Jul 2024 15:36:02 GMT
+
+### Patches
+
+- Update translations
+
+## 0.13.5
+Mon, 15 Jul 2024 20:21:36 GMT
+
+_Version update only_
+
+## 0.13.4
+Mon, 24 Jun 2024 20:54:46 GMT
+
+_Version update only_
+
+## 0.13.3
+Thu, 20 Jun 2024 22:18:18 GMT
+
+_Version update only_
+
+## 0.13.2
+Wed, 19 Jun 2024 16:57:37 GMT
+
+_Version update only_
+
+## 0.13.1
+Wed, 22 May 2024 15:16:13 GMT
+
+### Patches
+
+- extended hidden layer to allow hovering on L2 in right-start position
+
+## 0.13.0
+Mon, 22 Apr 2024 15:46:27 GMT
+
+### Minor changes
+
+- Add i18n registration API, remove stringMap from component config
+
+## 0.12.5
+Fri, 12 Apr 2024 19:34:30 GMT
+
+_Version update only_
+
+## 0.12.4
+Fri, 05 Apr 2024 19:04:44 GMT
+
+_Version update only_
+
+## 0.12.3
+Fri, 05 Apr 2024 18:04:37 GMT
+
+_Version update only_
+
+## 0.12.2
+Fri, 05 Apr 2024 16:07:54 GMT
+
+_Version update only_
 
 ## 0.12.1
 Tue, 26 Mar 2024 21:30:40 GMT

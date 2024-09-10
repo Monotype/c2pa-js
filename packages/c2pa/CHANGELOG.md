@@ -1,6 +1,126 @@
 # Change Log - c2pa
 
-This log was last generated on Tue, 26 Mar 2024 21:30:40 GMT and should not be manually modified.
+This log was last generated on Tue, 10 Sep 2024 19:21:30 GMT and should not be manually modified.
+
+## 0.24.1
+Tue, 10 Sep 2024 19:21:30 GMT
+
+### Patches
+
+- Fix generative info display
+
+## 0.24.0
+Tue, 20 Aug 2024 14:09:04 GMT
+
+### Minor changes
+
+- Add `label` field to `Manifest` object
+
+## 0.23.2
+Mon, 19 Aug 2024 17:03:27 GMT
+
+_Version update only_
+
+## 0.23.1
+Tue, 30 Jul 2024 21:39:10 GMT
+
+### Patches
+
+- Add `id_ID` and `vi_VN` to translations index
+
+## 0.23.0
+Tue, 30 Jul 2024 00:37:40 GMT
+
+### Minor changes
+
+- Add support for ingredient `data_types` field
+
+## 0.22.6
+Tue, 23 Jul 2024 15:58:41 GMT
+
+### Patches
+
+- Add icon for `c2pa.watermarked`
+
+## 0.22.5
+Tue, 23 Jul 2024 15:13:27 GMT
+
+### Patches
+
+- Add language support for ID and VN
+
+## 0.22.4
+Mon, 22 Jul 2024 17:52:53 GMT
+
+### Patches
+
+- Add copy for `c2pa.watermarked`
+
+## 0.22.3
+Tue, 16 Jul 2024 15:36:02 GMT
+
+### Patches
+
+- Update translations
+
+## 0.22.2
+Mon, 15 Jul 2024 20:21:36 GMT
+
+_Version update only_
+
+## 0.22.1
+Mon, 24 Jun 2024 20:54:46 GMT
+
+### Patches
+
+- Fix action selection with multi-part action names
+
+## 0.22.0
+Thu, 20 Jun 2024 22:18:18 GMT
+
+### Minor changes
+
+- Expose `createManifestStore`
+
+## 0.21.1
+Wed, 19 Jun 2024 16:57:37 GMT
+
+_Version update only_
+
+## 0.21.0
+Mon, 22 Apr 2024 15:46:27 GMT
+
+### Minor changes
+
+- Add i18n registration API for selectEditsAndActivity
+
+## 0.20.0
+Fri, 12 Apr 2024 19:34:30 GMT
+
+### Minor changes
+
+- Add support for V2 Actions when using `selectGenerativeInfo`
+
+## 0.19.4
+Fri, 05 Apr 2024 19:04:44 GMT
+
+### Patches
+
+- Add icons for actions.v2
+
+## 0.19.3
+Fri, 05 Apr 2024 18:04:37 GMT
+
+### Patches
+
+- Add support for c2pa.actions.v2 in selectEditsAndActivity
+
+## 0.19.2
+Fri, 05 Apr 2024 16:07:54 GMT
+
+### Patches
+
+- Add MOV support
 
 ## 0.19.1
 Tue, 26 Mar 2024 21:30:40 GMT
