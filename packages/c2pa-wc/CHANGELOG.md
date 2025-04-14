@@ -1,6 +1,100 @@
 # Change Log - c2pa-wc
 
-This log was last generated on Tue, 10 Sep 2024 19:21:30 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Apr 2025 17:26:57 GMT and should not be manually modified.
+
+## 0.14.2
+Fri, 11 Apr 2025 17:26:57 GMT
+
+### Patches
+
+- Display profile URLs correctly
+
+## 0.14.1
+Thu, 10 Apr 2025 22:02:53 GMT
+
+### Patches
+
+- Fix broken social display and handmade detection
+
+## 0.14.0
+Wed, 09 Apr 2025 19:43:58 GMT
+
+### Minor changes
+
+- Add manifest-summary-v2 and getManifestSummaryData
+
+## 0.13.27
+Tue, 08 Apr 2025 18:59:44 GMT
+
+_Version update only_
+
+## 0.13.26
+Fri, 04 Apr 2025 21:29:51 GMT
+
+_Version update only_
+
+## 0.13.25
+Thu, 27 Mar 2025 14:09:02 GMT
+
+_Version update only_
+
+## 0.13.24
+Tue, 04 Mar 2025 21:49:13 GMT
+
+_Version update only_
+
+## 0.13.23
+Mon, 03 Mar 2025 16:53:34 GMT
+
+### Patches
+
+- Do not translate brand strings
+
+## 0.13.22
+Mon, 24 Feb 2025 21:12:02 GMT
+
+_Version update only_
+
+## 0.13.21
+Tue, 11 Feb 2025 19:43:56 GMT
+
+_Version update only_
+
+## 0.13.20
+Fri, 07 Feb 2025 16:21:09 GMT
+
+_Version update only_
+
+## 0.13.19
+Mon, 03 Feb 2025 23:15:46 GMT
+
+_Version update only_
+
+## 0.13.18
+Wed, 29 Jan 2025 23:26:48 GMT
+
+### Patches
+
+- Add disable state to inspect button in cai-manifest-sumamry
+
+## 0.13.17
+Wed, 29 Jan 2025 18:20:48 GMT
+
+### Patches
+
+- Add hide-content-summary attribute to hide content summary section
+
+## 0.13.16
+Fri, 18 Oct 2024 18:01:58 GMT
+
+_Version update only_
+
+## 0.13.15
+Fri, 04 Oct 2024 21:00:52 GMT
+
+### Patches
+
+- Fix empty social media display
 
 ## 0.13.14
 Tue, 10 Sep 2024 19:21:30 GMT

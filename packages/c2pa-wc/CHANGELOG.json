@@ -2,6 +2,218 @@
   "name": "c2pa-wc",
   "entries": [
     {
+      "version": "0.14.2",
+      "tag": "c2pa-wc_v0.14.2",
+      "date": "Fri, 11 Apr 2025 17:26:57 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Display profile URLs correctly"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.30.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.14.1",
+      "tag": "c2pa-wc_v0.14.1",
+      "date": "Thu, 10 Apr 2025 22:02:53 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix broken social display and handmade detection"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.30.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.14.0",
+      "tag": "c2pa-wc_v0.14.0",
+      "date": "Wed, 09 Apr 2025 19:43:58 GMT",
+      "comments": {
+        "minor": [
+          {
+            "comment": "Add manifest-summary-v2 and getManifestSummaryData"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.30.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.27",
+      "tag": "c2pa-wc_v0.13.27",
+      "date": "Tue, 08 Apr 2025 18:59:44 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.29.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.26",
+      "tag": "c2pa-wc_v0.13.26",
+      "date": "Fri, 04 Apr 2025 21:29:51 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.28.4`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.25",
+      "tag": "c2pa-wc_v0.13.25",
+      "date": "Thu, 27 Mar 2025 14:09:02 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.28.3`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.24",
+      "tag": "c2pa-wc_v0.13.24",
+      "date": "Tue, 04 Mar 2025 21:49:13 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.28.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.23",
+      "tag": "c2pa-wc_v0.13.23",
+      "date": "Mon, 03 Mar 2025 16:53:34 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Do not translate brand strings"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.28.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.22",
+      "tag": "c2pa-wc_v0.13.22",
+      "date": "Mon, 24 Feb 2025 21:12:02 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.28.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.21",
+      "tag": "c2pa-wc_v0.13.21",
+      "date": "Tue, 11 Feb 2025 19:43:56 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.27.1`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.20",
+      "tag": "c2pa-wc_v0.13.20",
+      "date": "Fri, 07 Feb 2025 16:21:09 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.27.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.19",
+      "tag": "c2pa-wc_v0.13.19",
+      "date": "Mon, 03 Feb 2025 23:15:46 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.26.0`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.18",
+      "tag": "c2pa-wc_v0.13.18",
+      "date": "Wed, 29 Jan 2025 23:26:48 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add disable state to inspect button in cai-manifest-sumamry"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.17",
+      "tag": "c2pa-wc_v0.13.17",
+      "date": "Wed, 29 Jan 2025 18:20:48 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Add hide-content-summary attribute to hide content summary section"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.16",
+      "tag": "c2pa-wc_v0.13.16",
+      "date": "Fri, 18 Oct 2024 18:01:58 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"c2pa\" to `0.24.2`"
+          }
+        ]
+      }
+    },
+    {
+      "version": "0.13.15",
+      "tag": "c2pa-wc_v0.13.15",
+      "date": "Fri, 04 Oct 2024 21:00:52 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "Fix empty social media display"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.13.14",
       "tag": "c2pa-wc_v0.13.14",
       "date": "Tue, 10 Sep 2024 19:21:30 GMT",

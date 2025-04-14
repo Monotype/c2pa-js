@@ -18,6 +18,11 @@ export interface ResourceReference {
   identifier: string;
 }
 
+export interface AssetReport {
+  manifest_store: ManifestStore;
+  cawg_json: string;
+}
+
 export interface ManifestStore {
   active_manifest: string;
   manifests: Record<string, Manifest>;
@@ -110,6 +115,8 @@ export type C2paActionsAssertionV2 = Assertion<
   'c2pa.actions.v2',
   {
     actions: ActionV2[];
+    allActionsIncluded?: boolean;
+    templates: Template[];
   }
 >;
 
@@ -161,6 +168,12 @@ export interface ActionV2 {
   reason?: string;
   parameters?: ParametersV2;
 }
+
+export interface Template {
+  digitalSourceType: string;
+  action: string;
+}
+
 interface ParametersV2 {
   ingredient?: HashedUri;
   description?: string;

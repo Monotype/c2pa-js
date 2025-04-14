@@ -1,6 +1,55 @@
 # Change Log - @contentauth/toolkit
 
-This log was last generated on Mon, 19 Aug 2024 17:03:27 GMT and should not be manually modified.
+This log was last generated on Wed, 09 Apr 2025 19:43:58 GMT and should not be manually modified.
+
+## 0.13.3
+Wed, 09 Apr 2025 19:43:58 GMT
+
+### Patches
+
+- Improve CAWG signature validation
+
+## 0.13.2
+Fri, 04 Apr 2025 21:29:51 GMT
+
+### Patches
+
+- Update c2pa-rs to 0.49.1 and cawg-identity to 0.11.1
+
+## 0.13.1
+Thu, 27 Mar 2025 14:09:02 GMT
+
+### Patches
+
+- Update c2pa-rs to 0.48.2
+
+## 0.13.0
+Mon, 24 Feb 2025 21:12:02 GMT
+
+### Minor changes
+
+- Implement CAWG reading
+
+## 0.12.1
+Tue, 11 Feb 2025 19:43:56 GMT
+
+### Patches
+
+- Update c2pa-rs to 0.45.3
+
+## 0.12.0
+Fri, 07 Feb 2025 16:21:09 GMT
+
+### Minor changes
+
+- Update to c2pa-rs 0.45.2
+
+## 0.11.9
+Fri, 18 Oct 2024 18:01:58 GMT
+
+### Patches
+
+- Update to c2pa-rs 0.37.0
 
 ## 0.11.8
 Mon, 19 Aug 2024 17:03:27 GMT

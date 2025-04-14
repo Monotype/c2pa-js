@@ -1,6 +1,89 @@
 # Change Log - c2pa
 
-This log was last generated on Tue, 10 Sep 2024 19:21:30 GMT and should not be manually modified.
+This log was last generated on Fri, 11 Apr 2025 17:26:57 GMT and should not be manually modified.
+
+## 0.30.2
+Fri, 11 Apr 2025 17:26:57 GMT
+
+### Patches
+
+- Update CAWG types
+
+## 0.30.1
+Thu, 10 Apr 2025 22:02:53 GMT
+
+### Patches
+
+- Fix handmade detection
+
+## 0.30.0
+Wed, 09 Apr 2025 19:43:58 GMT
+
+### Minor changes
+
+- Update types, add isHandmade, update other selectors
+
+## 0.29.0
+Tue, 08 Apr 2025 18:59:44 GMT
+
+### Minor changes
+
+- feat: Lookup ai details in other parameters
+
+## 0.28.4
+Fri, 04 Apr 2025 21:29:51 GMT
+
+_Version update only_
+
+## 0.28.3
+Thu, 27 Mar 2025 14:09:02 GMT
+
+_Version update only_
+
+## 0.28.2
+Tue, 04 Mar 2025 21:49:13 GMT
+
+### Patches
+
+- Handle case with null CAWG data
+
+## 0.28.1
+Mon, 03 Mar 2025 16:53:34 GMT
+
+### Patches
+
+- Do not translate brand strings
+
+## 0.28.0
+Mon, 24 Feb 2025 21:12:02 GMT
+
+### Minor changes
+
+- Implement CAWG reading
+
+## 0.27.1
+Tue, 11 Feb 2025 19:43:56 GMT
+
+_Version update only_
+
+## 0.27.0
+Fri, 07 Feb 2025 16:21:09 GMT
+
+### Minor changes
+
+- Update to c2pa-rs 0.45.2
+
+## 0.26.0
+Mon, 03 Feb 2025 23:15:46 GMT
+
+### Minor changes
+
+- Remove dependency on browser crypto impl
+
+## 0.24.2
+Fri, 18 Oct 2024 18:01:58 GMT
+
+_Version update only_
 
 ## 0.24.1
 Tue, 10 Sep 2024 19:21:30 GMT
