@@ -325,8 +325,8 @@ checksum = "d71b6127be86fdcfddb610f7182ac57211d4b18a3e9c82eb2d17662f2227ad6a"
 
 [[package]]
 name = "c2pa"
-version = "0.49.1"
-source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype%2FfontSupport#bfcdf4b341417fee3b56c72283c5966f4ea41863"
+version = "0.49.3"
+source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype%2FfontSupport#bee2e2a6f5b7ea8f06a7d58be319293de4f3ae80"
 dependencies = [
  "asn1-rs",
  "async-generic",
@@ -397,8 +397,8 @@ dependencies = [
 
 [[package]]
 name = "c2pa-crypto"
-version = "0.8.1"
-source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype%2FfontSupport#bfcdf4b341417fee3b56c72283c5966f4ea41863"
+version = "0.8.2"
+source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype%2FfontSupport#bee2e2a6f5b7ea8f06a7d58be319293de4f3ae80"
 dependencies = [
  "asn1-rs",
  "async-generic",
@@ -488,13 +488,13 @@ dependencies = [
 
 [[package]]
 name = "c2pa-status-tracker"
-version = "0.6.0"
-source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype%2FfontSupport#bfcdf4b341417fee3b56c72283c5966f4ea41863"
+version = "0.6.1"
+source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype%2FfontSupport#bee2e2a6f5b7ea8f06a7d58be319293de4f3ae80"
 
 [[package]]
 name = "cawg-identity"
-version = "0.11.1"
-source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype%2FfontSupport#bfcdf4b341417fee3b56c72283c5966f4ea41863"
+version = "0.12.2"
+source = "git+https://github.com/Monotype/c2pa-rs?branch=monotype%2FfontSupport#bee2e2a6f5b7ea8f06a7d58be319293de4f3ae80"
 dependencies = [
  "async-trait",
  "base64 0.22.1",
