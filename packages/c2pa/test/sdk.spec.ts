@@ -52,36 +52,21 @@ describe('c2pa', function () {
             expect(this.result.manifestStore?.validationStatus).toEqual([
               {
                 code: 'signingCredential.invalid',
-                url: 'Cose_Sign1',
+                url: 'self#jumbf=/c2pa/adobetest:urn:uuid:825cf3cf-0127-4af3-b65c-c11d0f961e67',
                 explanation:
-                  'certificate issuer and subject cannot be the same {self-signed disallowed}',
-              },
-              {
-                code: 'general.error',
-                url: 'self#jumbf=/c2pa/adobetest:urn:uuid:825cf3cf-0127-4af3-b65c-c11d0f961e67/c2pa.signature',
-                explanation: 'claim signature is not valid: CoseInvalidCert',
+                  'certificate issuer and subject cannot be the same (self-signed disallowed)',
               },
               {
                 code: 'signingCredential.invalid',
-                url: 'Cose_Sign1',
+                url: 'self#jumbf=/c2pa/adobetest:urn:uuid:879beec2-74bb-4150-8245-9176dd6a8972',
                 explanation:
-                  'certificate issuer and subject cannot be the same {self-signed disallowed}',
-              },
-              {
-                code: 'general.error',
-                url: 'self#jumbf=/c2pa/adobetest:urn:uuid:879beec2-74bb-4150-8245-9176dd6a8972/c2pa.signature',
-                explanation: 'claim signature is not valid: CoseInvalidCert',
+                  'certificate issuer and subject cannot be the same (self-signed disallowed)',
               },
               {
                 code: 'signingCredential.invalid',
-                url: 'Cose_Sign1',
+                url: 'self#jumbf=/c2pa/adobetest:urn:uuid:120c2204-929d-4e97-a3b7-f5ecc9408b79',
                 explanation:
-                  'certificate issuer and subject cannot be the same {self-signed disallowed}',
-              },
-              {
-                code: 'general.error',
-                url: 'self#jumbf=/c2pa/adobetest:urn:uuid:120c2204-929d-4e97-a3b7-f5ecc9408b79/c2pa.signature',
-                explanation: 'claim signature is not valid: CoseInvalidCert',
+                  'certificate issuer and subject cannot be the same (self-signed disallowed)',
               },
             ]);
           });
@@ -333,6 +318,47 @@ describe('c2pa', function () {
         );
 
         expect(result.manifestStore).toBeNull();
+      });
+    });
+
+    describe('CAWG identity', function () {
+      it('should be returned correctly', async function () {
+        const c2pa = await createC2pa({
+          wasmSrc: './dist/assets/wasm/toolkit_bg.wasm',
+          workerSrc: './dist/c2pa.worker.js',
+        });
+
+        const result = await c2pa.read(
+          './node_modules/@contentauth/testing/fixtures/images/ims_multiple_manifests.jpg',
+        );
+
+        const activeManifest = result.manifestStore?.activeManifest;
+        const activeManifestVerifiedIdentities =
+          activeManifest?.verifiedIdentities;
+        const ingredientVerifiedIdentities =
+          activeManifest?.ingredients[0].manifest?.verifiedIdentities;
+
+        expect(activeManifestVerifiedIdentities).toEqual([
+          {
+            type: 'cawg.social_media',
+            username: 'firstlast555',
+            uri: 'https://net.s2stagehance.com/firstlast555',
+            verifiedAt: '2025-01-10T19:53:59Z',
+            provider: { id: 'https://behance.net', name: 'behance' },
+          },
+        ]);
+
+        expect(ingredientVerifiedIdentities).toEqual([
+          {
+            type: 'cawg.social_media',
+            username: 'Robert Tiles',
+            uri: 'https://net.s2stagehance.com/roberttiles',
+            verifiedAt: '2024-09-24T18:15:11Z',
+            provider: { id: 'https://behance.net', name: 'behance' },
+          },
+        ]);
+
+        expect(result).not.toBeNull();
       });
     });
   });
