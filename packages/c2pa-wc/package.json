@@ -1,6 +1,10 @@
 {
   "name": "c2pa-wc",
+<<<<<<< HEAD
   "version": "0.14.9",
+=======
+  "version": "0.14.5",
+>>>>>>> 77791ef (Bump versions [skip ci])
   "contributors": [
     {
       "name": "Dave Kozma",

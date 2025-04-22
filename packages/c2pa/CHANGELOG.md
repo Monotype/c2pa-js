@@ -1,5 +1,6 @@
 # Change Log - c2pa
 
+<<<<<<< HEAD
 This log was last generated on Tue, 06 May 2025 21:10:16 GMT and should not be manually modified.
 
 ## 0.30.9
@@ -27,6 +28,9 @@ Tue, 22 Apr 2025 22:10:04 GMT
 ### Patches
 
 - Correct DNT selector logic
+=======
+This log was last generated on Tue, 22 Apr 2025 21:29:46 GMT and should not be manually modified.
+>>>>>>> 77791ef (Bump versions [skip ci])
 
 ## 0.30.5
 Tue, 22 Apr 2025 21:29:46 GMT
