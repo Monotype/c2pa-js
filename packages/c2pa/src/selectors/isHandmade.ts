@@ -15,7 +15,7 @@ export function isHandmade(manifestStore: ManifestStore): boolean {
   return manifests.length > 0 && manifests.every(isHandmadeManifest);
 }
 
-function isHandmadeManifest(manifest: Manifest): boolean {
+export function isHandmadeManifest(manifest: Manifest): boolean {
   const actionsV2 = manifest.assertions
     .get('c2pa.actions.v2')
     .filter((assertion) => !!assertion);
@@ -30,7 +30,7 @@ function isHandmadeManifest(manifest: Manifest): boolean {
   const actionsHandmade =
     actionsV2.length > 0 &&
     actionsV2.every(({ data }) => {
-      const handmadeTemplate = !!data.templates.find(
+      const handmadeTemplate = !!data.templates?.find(
         (template) =>
           template.action === '*' &&
           template.digitalSourceType ===
