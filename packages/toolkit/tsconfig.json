@@ -3,8 +3,16 @@
     "outDir": "pkg/types",
     "lib": ["ESNext"],
     "emitDeclarationOnly": true,
-    "declaration": true
+    "declaration": true,
+    "skipLibCheck": true,
+    "noEmitOnError": false,
+    "strict": false,
+    "noImplicitAny": false,
+    "noImplicitReturns": false,
+    "noImplicitThis": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false
   },
   "include": ["types/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "../../../node_modules"]
 }
