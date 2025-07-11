@@ -12,7 +12,9 @@
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noImplicitReturns": true
+    "noImplicitReturns": true,
+    "skipLibCheck": true
   },
-  "include": ["./examples", "vite-env.d.ts"]
+  "include": ["./examples", "vite-env.d.ts"],
+  "exclude": ["node_modules", "../../../node_modules"]
 }
