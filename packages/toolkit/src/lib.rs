@@ -7,7 +7,7 @@
 
 // See https://github.com/rustwasm/wasm-bindgen/issues/2774
 #![allow(clippy::unused_unit)]
-use cawg_identity::{
+use c2pa::identity::{
     claim_aggregation::IcaSignatureVerifier, x509::X509SignatureVerifier, BuiltInSignatureVerifier,
     IdentityAssertion,
 };
