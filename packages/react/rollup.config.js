@@ -24,7 +24,18 @@ export default {
   external: ['react', 'c2pa', 'styled-components'],
   plugins: [
     typescript({ tsconfig: './tsconfig.json' }),
-    postcss({ modules: true }),
+    postcss({
+      modules: true,
+      // Explicitly use node-sass for SASS processing
+      preprocessor: (content, id) =>
+        new Promise((resolve, reject) => {
+          const sass = require('node-sass');
+          sass.render({ file: id }, (err, result) => {
+            if (err) reject(err);
+            resolve({ code: result.css.toString() });
+          });
+        }),
+    }),
     nodeResolve(),
     commonjs(),
   ],
