@@ -9,8 +9,9 @@
     "moduleResolution": "node",
     "strict": true,
     "target": "ES6",
-    "types": ["node"]
+    "types": ["node"],
+    "typeRoots": ["./node_modules/@types"] // Explicitly resolve @types/node locally
   },
   "include": ["**/*"],
-  "exclude": ["dist"]
+  "exclude": ["dist", "node_modules"] // Ensure node_modules is excluded to avoid conflicts
 }
