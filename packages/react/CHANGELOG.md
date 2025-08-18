@@ -1,6 +1,5 @@
 # Change Log - @contentauth/react
 
-<<<<<<< HEAD
 This log was last generated on Tue, 06 May 2025 21:10:16 GMT and should not be manually modified.
 
 ## 0.2.87
@@ -22,9 +21,6 @@ _Version update only_
 Tue, 22 Apr 2025 22:10:04 GMT
 
 _Version update only_
-=======
-This log was last generated on Tue, 22 Apr 2025 21:29:46 GMT and should not be manually modified.
->>>>>>> 77791ef (Bump versions [skip ci])
 
 ## 0.2.83
 Tue, 22 Apr 2025 21:29:46 GMT

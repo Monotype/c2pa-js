@@ -2,7 +2,6 @@
   "name": "@contentauth/react",
   "entries": [
     {
-<<<<<<< HEAD
       "version": "0.2.87",
       "tag": "@contentauth/react_v0.2.87",
       "date": "Tue, 06 May 2025 21:10:16 GMT",
@@ -87,8 +86,6 @@
       }
     },
     {
-=======
->>>>>>> 77791ef (Bump versions [skip ci])
       "version": "0.2.83",
       "tag": "@contentauth/react_v0.2.83",
       "date": "Tue, 22 Apr 2025 21:29:46 GMT",

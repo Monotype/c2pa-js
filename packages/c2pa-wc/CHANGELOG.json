@@ -2,7 +2,6 @@
   "name": "c2pa-wc",
   "entries": [
     {
-<<<<<<< HEAD
       "version": "0.14.9",
       "tag": "c2pa-wc_v0.14.9",
       "date": "Tue, 06 May 2025 21:10:16 GMT",
@@ -51,8 +50,6 @@
       }
     },
     {
-=======
->>>>>>> 77791ef (Bump versions [skip ci])
       "version": "0.14.5",
       "tag": "c2pa-wc_v0.14.5",
       "date": "Tue, 22 Apr 2025 21:29:46 GMT",
