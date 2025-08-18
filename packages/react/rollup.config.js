@@ -2,6 +2,7 @@ import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
 import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
+import sass from 'sass';
 
 const banner = `
 /*!*************************************************************************
@@ -24,7 +25,19 @@ export default {
   external: ['react', 'c2pa', 'styled-components'],
   plugins: [
     typescript({ tsconfig: './tsconfig.json' }),
-    postcss({ modules: true }),
+    postcss({
+      modules: true,
+      preprocessor: (content, id) => {
+        if (id.endsWith('.scss')) {
+          return sass.compileString(content, {
+            style: 'compressed',
+          }).css;
+        }
+        return content;
+      },
+      extract: false,
+      inject: false,
+    }),
     nodeResolve(),
     commonjs(),
   ],
